@@ -1,5 +1,7 @@
 # Cahier des charges mybank.io
 
+Benjamin LI
+Alexis Lin
 ---
 
 ## Avant de commencer le projet

@@ -156,7 +156,7 @@ def transfer():
 #mail@lp1.eu test4242
 
 def main():
-    app.run(threaded=True)
+    app.run(threaded=True, host="0.0.0.0")
 
 if __name__ == "__main__":
     exit(main())

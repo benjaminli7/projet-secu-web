@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  web:
+    build: 
+      context: ./server
+    ports:
+    - "3000:5000"
+
+  
+  reverse_proxy:
+    build: 
+      context: ./reverse_proxy
+    ports:      
+    - "8000:443"

@@ -32,3 +32,27 @@
 | Criticité | Critique |
 | Exploitation | https://website.com/blog?id=1 UNION SELECT * FROM users |
 | Remédiation | Ajouter une règle dans le pare-feu pour bloquer les requêtes contenant le mot clé UNION |
+
+
+| Vulnérabilité | Injection SQL |
+|:-----:|:------------:|
+| Description | Utilisatiin du OR lors du login | 
+| Criticité | Critique |
+| Exploitation | Login: ' OR 1=1   Password: peu importe |
+| Remédiation | Ajouter une règle dans le pare-feu pour bloquer les requêtes contenant le mot OR pour le formulaire du login |
+
+
+| Vulnérabilité | Faille XSS|
+|:-----:|:------------:|
+| Description | ajout de js quand on ajoute une balise img dans l'url avec le onerror | 
+| Criticité | Critique |
+| Exploitation | http://localhost:3000/?view=login&error=%3Cimg%20src=%22abc%22%20onerror=%22alert(1)%22%20/%3E |
+| Remédiation |  |
+
+
+| Vulnérabilité | Faille SQL|
+|:-----:|:------------:|
+| Description | Transfert d'un nombre négatif | 
+| Criticité | Critique |
+| Exploitation | Transfert d'un nombre négatif |
+| Remédiation | Empêcher de pour transférer un nombre négatif |

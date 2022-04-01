@@ -8,4 +8,4 @@ RUN apk add fail2ban
 
 RUN apk add openssl
 
-# ENTRYPOINT ["bin/sh", "/script.sh"]
+ENTRYPOINT ["bin/sh", "/script.sh"]

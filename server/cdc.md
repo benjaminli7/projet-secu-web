@@ -47,7 +47,8 @@
 | Description | ajout de js quand on ajoute une balise img dans l'url avec le onerror | 
 | Criticité | Critique |
 | Exploitation | http://localhost:3000/?view=login&error=%3Cimg%20src=%22abc%22%20onerror=%22alert(1)%22%20/%3E |
-| Remédiation |  |
+| Remédiation | Echapper les caractères HTML, CSS et Javascript, ajouter dans l'entete X-XSS-Protection qui filtre automatiquement certaines attaques XSS
+, l’intégration d’un en-tête Content-Security-Policy dans les requêtes HTTP |
 
 
 | Vulnérabilité | Faille SQL|
@@ -55,4 +56,4 @@
 | Description | Transfert d'un nombre négatif | 
 | Criticité | Critique |
 | Exploitation | Transfert d'un nombre négatif |
-| Remédiation | Empêcher de pour transférer un nombre négatif |
+| Remédiation | Empêcher de pour transférer un nombre négatif|
